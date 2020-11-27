@@ -40,7 +40,7 @@ class Worker:
                 ),
             )()
         except exceptions.UnknownCommand:
-            raise exceptions.UnknownCommand
+            print("Команда не найдена.")
 
     def exit(self) -> None:
         raise KeyboardInterrupt()
